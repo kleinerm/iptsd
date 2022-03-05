@@ -71,7 +71,7 @@ static void iptsd_touch_processing_get_palms(struct iptsd_touch_processor *tp, i
 		float max_v = tp->contacts[i].max_v;
 
 		// Regular touch
-		if (vx < 0.6 || (vx < 1.0 && max_v > 80))
+		if (vx < 0.7 || (vx < 1.0 && max_v >= 40))
 			continue;
 
 		// Thumb
